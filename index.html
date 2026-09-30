@@ -1,0 +1,893 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Découvrez les animaux du monde, leurs habitats, leur alimentation et leurs caractéristiques.">
+
+    <title>WildWorld — Monde des Animaux</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <div class="logo">
+            🐾 <span>WildWorld</span>
+        </div>
+
+        <nav class="navigation">
+            <a href="#accueil">Accueil</a>
+            <a href="#animaux">Animaux</a>
+            <a href="#habitats">Habitats</a>
+            <a href="#apropos">À propos</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <main>
+
+        <section class="hero" id="accueil">
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    🌍 EXPLORER LA VIE SAUVAGE
+                </span>
+
+                <h1>
+                    Découvrez les
+                    <span>animaux</span>
+                    du monde
+                </h1>
+
+                <p>
+                    Explorez les espèces les plus fascinantes de notre planète,
+                    découvrez leurs habitats, leur alimentation et leurs
+                    caractéristiques.
+                </p>
+
+                <a href="#animaux" class="hero-button">
+                    Explorer les animaux →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             RECHERCHE
+             ================================================= -->
+
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span>🔎</span>
+
+                <input
+                    type="search"
+                    id="animalSearch"
+                    placeholder="Rechercher un animal..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             STATISTIQUES
+             ================================================= -->
+
+        <section class="stats">
+
+            <div class="stat">
+                <strong>12+</strong>
+                <span>Animaux</span>
+            </div>
+
+            <div class="stat">
+                <strong>7</strong>
+                <span>Continents</span>
+            </div>
+
+            <div class="stat">
+                <strong>4</strong>
+                <span>Grandes familles</span>
+            </div>
+
+            <div class="stat">
+                <strong>🌍</strong>
+                <span>Monde entier</span>
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ANIMAUX
+             ================================================= -->
+
+        <section class="animals-section" id="animaux">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">
+                        COLLECTION
+                    </span>
+
+                    <h2>
+                        Animaux fascinants
+                    </h2>
+                </div>
+
+                <p>
+                    Une sélection d'espèces extraordinaires
+                    provenant de différents habitats.
+                </p>
+
+            </div>
+
+
+            <!-- FILTRES -->
+
+            <div class="animal-filters">
+
+                <button class="filter-button active" data-filter="all">
+                    Tous
+                </button>
+
+                <button class="filter-button" data-filter="mammifere">
+                    🐘 Mammifères
+                </button>
+
+                <button class="filter-button" data-filter="oiseau">
+                    🦅 Oiseaux
+                </button>
+
+                <button class="filter-button" data-filter="reptile">
+                    🐢 Reptiles
+                </button>
+
+                <button class="filter-button" data-filter="marin">
+                    🌊 Marins
+                </button>
+
+                <button class="filter-button" data-filter="insecte">
+                    🦋 Insectes
+                </button>
+
+            </div>
+
+
+            <!-- GRILLE -->
+
+            <div class="animal-grid" id="animalGrid">
+
+
+                <!-- LION -->
+
+                <article class="animal-card"
+                         data-category="mammifere"
+                         data-name="lion">
+
+                    <div class="animal-image">
+
+                        <img
+                            src="https://loremflickr.com/800/600/lion"
+                            alt="Lion"
+                            loading="lazy"
+                        >
+
+                        <span class="continent">
+                            Afrique
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <div class="animal-type">
+                            MAMMIFÈRE
+                        </div>
+
+                        <h3>Lion</h3>
+
+                        <p>
+                            Grand félin vivant principalement
+                            dans les savanes africaines.
+                        </p>
+
+                        <div class="animal-details">
+                            <span>📍 Afrique</span>
+                            <span>🍖 Carnivore</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ÉLÉPHANT -->
+
+                <article class="animal-card"
+                         data-category="mammifere"
+                         data-name="elephant">
+
+                    <div class="animal-image">
+
+                        <img
+                            src="https://loremflickr.com/800/600/elephant"
+                            alt="Éléphant"
+                            loading="lazy"
+                        >
+
+                        <span class="continent">
+                            Afrique
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <div class="animal-type">
+                            MAMMIFÈRE
+                        </div>
+
+                        <h3>Éléphant</h3>
+
+                        <p>
+                            Le plus grand animal terrestre
+                            actuel.
+                        </p>
+
+                        <div class="animal-details">
+                            <span>📍 Afrique</span>
+                            <span>🌿 Herbivore</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TIGRE -->
+
+                <article class="animal-card"
+                         data-category="mammifere"
+                         data-name="tigre">
+
+                    <div class="animal-image">
+
+                        <img
+                            src="https://loremflickr.com/800/600/tiger"
+                            alt="Tigre"
+                            loading="lazy"
+                        >
+
+                        <span class="continent">
+                            Asie
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <div class="animal-type">
+                            MAMMIFÈRE
+                        </div>
+
+                        <h3>Tigre</h3>
+
+                        <p>
+                            Grand félin reconnaissable
+                            à ses rayures.
+                        </p>
+
+                        <div class="animal-details">
+                            <span>📍 Asie</span>
+                            <span>🍖 Carnivore</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PANDA -->
+
+                <article class="animal-card"
+                         data-category="mammifere"
+                         data-name="panda">
+
+                    <div class="animal-image">
+
+                        <img
+                            src="https://loremflickr.com/800/600/panda"
+                            alt="Panda géant"
+                            loading="lazy"
+                        >
+
+                        <span class="continent">
+                            Chine
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <div class="animal-type">
+                            MAMMIFÈRE
+                        </div>
+
+                        <h3>Panda géant</h3>
+
+                        <p>
+                            Animal emblématique des
+                            montagnes chinoises.
+                        </p>
+
+                        <div class="animal-details">
+                            <span>📍 Chine</span>
+                            <span>🎋 Herbivore</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- GIRAFE -->
+
+                <article class="animal-card"
+                         data-category="mammifere"
+                         data-name="girafe">
+
+                    <div class="animal-image">
+
+                        <img
+                            src="https://loremflickr.com/800/600/giraffe"
+                            alt="Girafe"
+                            loading="lazy"
+                        >
+
+                        <span class="continent">
+                            Afrique
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <div class="animal-type">
+                            MAMMIFÈRE
+                        </div>
+
+                        <h3>Girafe</h3>
+
+                        <p>
+                            Mammifère terrestre connu
+                            pour sa grande taille.
+                        </p>
+
+                        <div class="animal-details">
+                            <span>📍 Afrique</span>
+                            <span>🌿 Herbivore</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- GORILLE -->
+
+                <article class="animal-card"
+                         data-category="mammifere"
+                         data-name="gorille">
+
+                    <div class="animal-image">
+
+                        <img
+                            src="https://loremflickr.com/800/600/gorilla"
+                            alt="Gorille"
+                            loading="lazy"
+                        >
+
+                        <span class="continent">
+                            Afrique
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <div class="animal-type">
+                            PRIMATE
+                        </div>
+
+                        <h3>Gorille</h3>
+
+                        <p>
+                            Grand primate vivant dans
+                            les forêts africaines.
+                        </p>
+
+                        <div class="animal-details">
+                            <span>📍 Afrique</span>
+                            <span>🌿 Omnivore</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- AIGLE -->
+
+                <article class="animal-card"
+                         data-category="oiseau"
+                         data-name="aigle">
+
+                    <div class="animal-image">
+
+                        <img
+                            src="https://loremflickr.com/800/600/eagle"
+                            alt="Aigle"
+                            loading="lazy"
+                        >
+
+                        <span class="continent">
+                            Monde
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <div class="animal-type">
+                            OISEAU
+                        </div>
+
+                        <h3>Aigle</h3>
+
+                        <p>
+                            Rapace connu pour sa vue
+                            exceptionnelle.
+                        </p>
+
+                        <div class="animal-details">
+                            <span>🪽 Oiseau</span>
+                            <span>🍖 Carnivore</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MANCHOT -->
+
+                <article class="animal-card"
+                         data-category="oiseau"
+                         data-name="manchot">
+
+                    <div class="animal-image">
+
+                        <img
+                            src="https://loremflickr.com/800/600/penguin"
+                            alt="Manchot"
+                            loading="lazy"
+                        >
+
+                        <span class="continent">
+                            Antarctique
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <div class="animal-type">
+                            OISEAU
+                        </div>
+
+                        <h3>Manchot</h3>
+
+                        <p>
+                            Oiseau marin adapté aux
+                            régions froides.
+                        </p>
+
+                        <div class="animal-details">
+                            <span>❄️ Antarctique</span>
+                            <span>🐟 Carnivore</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- REQUIN -->
+
+                <article class="animal-card"
+                         data-category="marin"
+                         data-name="requin">
+
+                    <div class="animal-image">
+
+                        <img
+                            src="https://loremflickr.com/800/600/shark"
+                            alt="Requin"
+                            loading="lazy"
+                        >
+
+                        <span class="continent">
+                            Océans
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <div class="animal-type">
+                            POISSON
+                        </div>
+
+                        <h3>Requin</h3>
+
+                        <p>
+                            Prédateur marin présent
+                            dans de nombreux océans.
+                        </p>
+
+                        <div class="animal-details">
+                            <span>🌊 Océan</span>
+                            <span>🍖 Carnivore</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BALEINE -->
+
+                <article class="animal-card"
+                         data-category="marin"
+                         data-name="baleine">
+
+                    <div class="animal-image">
+
+                        <img
+                            src="https://loremflickr.com/800/600/whale"
+                            alt="Baleine"
+                            loading="lazy"
+                        >
+
+                        <span class="continent">
+                            Océans
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <div class="animal-type">
+                            MAMMIFÈRE MARIN
+                        </div>
+
+                        <h3>Baleine</h3>
+
+                        <p>
+                            Immense mammifère qui parcourt
+                            les océans.
+                        </p>
+
+                        <div class="animal-details">
+                            <span>🌊 Océan</span>
+                            <span>🐋 Marin</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TORTUE -->
+
+                <article class="animal-card"
+                         data-category="reptile"
+                         data-name="tortue">
+
+                    <div class="animal-image">
+
+                        <img
+                            src="https://loremflickr.com/800/600/turtle"
+                            alt="Tortue"
+                            loading="lazy"
+                        >
+
+                        <span class="continent">
+                            Monde
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <div class="animal-type">
+                            REPTILE
+                        </div>
+
+                        <h3>Tortue</h3>
+
+                        <p>
+                            Reptile reconnaissable à
+                            sa carapace protectrice.
+                        </p>
+
+                        <div class="animal-details">
+                            <span>🌍 Monde</span>
+                            <span>🐢 Reptile</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PAPILLON -->
+
+                <article class="animal-card"
+                         data-category="insecte"
+                         data-name="papillon">
+
+                    <div class="animal-image">
+
+                        <img
+                            src="https://loremflickr.com/800/600/butterfly"
+                            alt="Papillon"
+                            loading="lazy"
+                        >
+
+                        <span class="continent">
+                            Monde
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <div class="animal-type">
+                            INSECTE
+                        </div>
+
+                        <h3>Papillon</h3>
+
+                        <p>
+                            Insecte volant connu pour
+                            ses ailes colorées.
+                        </p>
+
+                        <div class="animal-details">
+                            <span>🌸 Nectar</span>
+                            <span>🦋 Insecte</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             HABITATS
+             ================================================= -->
+
+        <section class="habitats-section" id="habitats">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">
+                        EXPLORATION
+                    </span>
+
+                    <h2>
+                        Les grands habitats
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="habitat-grid">
+
+                <div class="habitat-card">
+                    <span>🌳</span>
+                    <h3>Forêts</h3>
+                    <p>
+                        Un monde riche en biodiversité.
+                    </p>
+                </div>
+
+                <div class="habitat-card">
+                    <span>🏜️</span>
+                    <h3>Déserts</h3>
+                    <p>
+                        Des espèces adaptées aux conditions extrêmes.
+                    </p>
+                </div>
+
+                <div class="habitat-card">
+                    <span>🌊</span>
+                    <h3>Océans</h3>
+                    <p>
+                        Un immense monde encore largement inexploré.
+                    </p>
+                </div>
+
+                <div class="habitat-card">
+                    <span>❄️</span>
+                    <h3>Régions polaires</h3>
+                    <p>
+                        Des animaux capables de vivre dans le froid.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             À PROPOS
+             ================================================= -->
+
+        <section class="about-section" id="apropos">
+
+            <div class="about-content">
+
+                <span class="section-label">
+                    À PROPOS
+                </span>
+
+                <h2>
+                    Comprendre notre planète,
+                    c'est aussi comprendre ses animaux.
+                </h2>
+
+                <p>
+                    WildWorld est un projet éducatif consacré
+                    à la découverte de la biodiversité.
+                    Explore les différentes espèces et découvre
+                    les environnements dans lesquels elles vivent.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-logo">
+            🐾 WildWorld
+        </div>
+
+        <p>
+            © 2026 WildWorld — Projet éducatif sur les animaux.
+        </p>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script>
+
+        const searchInput =
+            document.getElementById("animalSearch");
+
+        const animalCards =
+            document.querySelectorAll(".animal-card");
+
+        const filterButtons =
+            document.querySelectorAll(".filter-button");
+
+
+        /* RECHERCHE */
+
+        searchInput.addEventListener("input", function () {
+
+            const search =
+                this.value.toLowerCase().trim();
+
+            animalCards.forEach(card => {
+
+                const name =
+                    card.dataset.name.toLowerCase();
+
+                if (name.includes(search)) {
+                    card.style.display = "";
+                } else {
+                    card.style.display = "none";
+                }
+
+            });
+
+        });
+
+
+        /* FILTRES */
+
+        filterButtons.forEach(button => {
+
+            button.addEventListener("click", function () {
+
+                filterButtons.forEach(btn => {
+                    btn.classList.remove("active");
+                });
+
+                this.classList.add("active");
+
+                const filter =
+                    this.dataset.filter;
+
+                animalCards.forEach(card => {
+
+                    if (
+                        filter === "all" ||
+                        card.dataset.category === filter
+                    ) {
+                        card.style.display = "";
+                    } else {
+                        card.style.display = "none";
+                    }
+
+                });
+
+                searchInput.value = "";
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
+```
